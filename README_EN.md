@@ -182,7 +182,7 @@ Outputs include images, audio, frame rate, total frames and a report for preview
 
 Ordinary stories and ordinary ads do not get a formula applied automatically; formula cards are used only when **模版公式** is checked or you explicitly ask for a formula, narrative skeleton or structure template.
 
-Folder layout and customisation are covered in [Skills 目录说明](./Skills/目录说明.md) and [Skills 目录与装配说明](./文档/技术实现/Skills目录与装配说明.md) (Chinese).
+Folder layout and customisation are covered in [skills技能体系图解](skills技能体系图解.pdf)
 
 > **One-line takeaway｜Skills supply the method; the program handles execution and validation.**
 
