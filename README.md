@@ -183,7 +183,7 @@ python -m pip install -r requirements.txt
 
 普通故事和普通广告不会自动套公式；只有勾选「模版公式」或明确要求公式、叙事骨架、结构模板时才启用。
 
-目录结构与自定义方式见 [Skills 目录说明](./Skills/目录说明.md) 和 [Skills 目录与装配说明](./文档/技术实现/Skills目录与装配说明.md)。
+目录结构与自定义方式见 [skills技能体系图解](skills技能体系图解.pdf) 
 
 > **一句话记住｜Skills 提供方法，程序负责执行与校验。**
 
