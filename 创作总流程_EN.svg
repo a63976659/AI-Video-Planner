@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 420" role="img" aria-labelledby="title flow">
+  <title id="title">Creative workflow overview</title>
+  <desc id="flow">Flow diagram from AI planning, prompt timeline and prompt editing to H3 segmented generation and video production.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M2 2 L10 6 L2 10 Z" fill="#64748B" />
+    </marker>
+  </defs>
+  <rect width="1240" height="420" rx="28" fill="#F8FAFC" />
+  <text x="62" y="64" font-family="Segoe UI, PingFang SC, sans-serif" font-size="36" font-weight="700" fill="#0F172A">From brief to finished video</text>
+  <text x="62" y="102" font-family="Segoe UI, PingFang SC, sans-serif" font-size="20" fill="#475569">Five pages hand off one long video, and every step can be saved or reworked on its own.</text>
+
+  <g>
+    <rect x="62" y="140" width="190" height="215" rx="22" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2" />
+    <circle cx="157" cy="196" r="29" fill="#0F766E" />
+    <text x="157" y="206" text-anchor="middle" font-family="Segoe UI, PingFang SC, sans-serif" font-size="26" font-weight="700" fill="#FFFFFF">1</text>
+    <text x="157" y="260" text-anchor="middle" font-family="Segoe UI, PingFang SC, sans-serif" font-size="22" font-weight="700" fill="#0F172A">AI Planning</text>
+    <text x="157" y="292" text-anchor="middle" font-family="Segoe UI, PingFang SC, sans-serif" font-size="16" fill="#475569">materials + brief</text>
+    <rect x="105" y="318" width="104" height="12" rx="6" fill="#E2E8F0" />
+  </g>
+  <line x1="258" y1="248" x2="290" y2="248" stroke="#64748B" stroke-width="2.5" marker-end="url(#arrow)" />
+
+  <g>
+    <rect x="298" y="140" width="190" height="215" rx="22" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2" />
+    <circle cx="393" cy="196" r="29" fill="#0F766E" />
+    <text x="393" y="206" text-anchor="middle" font-family="Segoe UI, PingFang SC, sans-serif" font-size="26" font-weight="700" fill="#FFFFFF">2</text>
+    <text x="393" y="260" text-anchor="middle" font-family="Segoe UI, PingFang SC, sans-serif" font-size="22" font-weight="700" fill="#0F172A">Timeline</text>
+    <text x="393" y="292" text-anchor="middle" font-family="Segoe UI, PingFang SC, sans-serif" font-size="16" fill="#475569">order + duration</text>
+    <rect x="341" y="314" width="104" height="9" rx="4" fill="#E2E8F0" />
+    <rect x="341" y="329" width="72" height="9" rx="4" fill="#E2E8F0" />
+  </g>
+  <line x1="494" y1="248" x2="526" y2="248" stroke="#64748B" stroke-width="2.5" marker-end="url(#arrow)" />
+
+  <g>
+    <rect x="534" y="140" width="190" height="215" rx="22" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2" />
+    <circle cx="629" cy="196" r="29" fill="#0F766E" />
+    <text x="629" y="206" text-anchor="middle" font-family="Segoe UI, PingFang SC, sans-serif" font-size="26" font-weight="700" fill="#FFFFFF">3</text>
+    <text x="629" y="260" text-anchor="middle" font-family="Segoe UI, PingFang SC, sans-serif" font-size="22" font-weight="700" fill="#0F172A">Prompt Editor</text>
+    <text x="629" y="292" text-anchor="middle" font-family="Segoe UI, PingFang SC, sans-serif" font-size="16" fill="#475569">mode + references</text>
+    <path d="M588 321 L607 321 L642 294 L670 321" stroke="#E2E8F0" stroke-width="10" stroke-linecap="round" fill="none" />
+  </g>
+  <line x1="730" y1="248" x2="762" y2="248" stroke="#64748B" stroke-width="2.5" marker-end="url(#arrow)" />
+
+  <g>
+    <rect x="770" y="140" width="190" height="215" rx="22" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2" />
+    <circle cx="865" cy="196" r="29" fill="#0F766E" />
+    <text x="865" y="206" text-anchor="middle" font-family="Segoe UI, PingFang SC, sans-serif" font-size="26" font-weight="700" fill="#FFFFFF">4</text>
+    <text x="865" y="260" text-anchor="middle" font-family="Segoe UI, PingFang SC, sans-serif" font-size="22" font-weight="700" fill="#0F172A">H3 Generation</text>
+    <text x="865" y="292" text-anchor="middle" font-family="Segoe UI, PingFang SC, sans-serif" font-size="16" fill="#475569">official nodes</text>
+    <circle cx="865" cy="323" r="17" fill="#E2E8F0" />
+    <path d="M859 316 L876 323 L859 330 Z" fill="#64748B" />
+  </g>
+  <line x1="966" y1="248" x2="998" y2="248" stroke="#64748B" stroke-width="2.5" marker-end="url(#arrow)" />
+
+  <g>
+    <rect x="1006" y="140" width="190" height="215" rx="22" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2" />
+    <circle cx="1101" cy="196" r="29" fill="#0F766E" />
+    <text x="1101" y="206" text-anchor="middle" font-family="Segoe UI, PingFang SC, sans-serif" font-size="26" font-weight="700" fill="#FFFFFF">5</text>
+    <text x="1101" y="260" text-anchor="middle" font-family="Segoe UI, PingFang SC, sans-serif" font-size="22" font-weight="700" fill="#0F172A">Production</text>
+    <text x="1101" y="292" text-anchor="middle" font-family="Segoe UI, PingFang SC, sans-serif" font-size="16" fill="#475569">stitch + export</text>
+    <rect x="1054" y="308" width="48" height="32" rx="8" fill="#E2E8F0" />
+    <rect x="1106" y="308" width="48" height="32" rx="8" fill="none" stroke="#CBD5E1" stroke-width="2" />
+  </g>
+
+  <text x="62" y="394" font-family="Segoe UI, PingFang SC, sans-serif" font-size="18" fill="#475569">Close the short-clip loop first, then add duration, resolution and post-production complexity.</text>
+</svg>

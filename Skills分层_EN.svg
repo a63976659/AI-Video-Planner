@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 560" role="img" aria-labelledby="title skills">
+  <title id="title">Skills layers</title>
+  <desc id="skills">A video brief is assembled with task skills, shared capabilities, specialty rules and formula cards, while the program owns requests, scheduling, validation and saving.</desc>
+  <defs>
+    <marker id="skills-arrow" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M2 2 L10 6 L2 10 Z" fill="#64748B" />
+    </marker>
+  </defs>
+  <rect width="1240" height="560" rx="28" fill="#F8FAFC" />
+  <text x="62" y="62" font-family="Segoe UI, PingFang SC, sans-serif" font-size="34" font-weight="700" fill="#0F172A">How Skills take part in creation</text>
+  <text x="62" y="98" font-family="Segoe UI, PingFang SC, sans-serif" font-size="20" fill="#475569">References are layered by content and stage; Skills supply method, the program runs requests and checks.</text>
+
+  <g>
+    <rect x="60" y="218" width="150" height="126" rx="22" fill="#FFFFFF" stroke="#0F766E" stroke-width="3" />
+    <text x="135" y="272" text-anchor="middle" font-family="Segoe UI, PingFang SC, sans-serif" font-size="23" font-weight="700" fill="#0F172A">Video brief</text>
+    <text x="135" y="304" text-anchor="middle" font-family="Segoe UI, PingFang SC, sans-serif" font-size="15" fill="#475569">input · genre</text>
+    <text x="135" y="328" text-anchor="middle" font-family="Segoe UI, PingFang SC, sans-serif" font-size="15" fill="#475569">stage · trigger</text>
+  </g>
+  <line x1="216" y1="281" x2="246" y2="281" stroke="#64748B" stroke-width="2.5" marker-end="url(#skills-arrow)" />
+
+  <g>
+    <rect x="254" y="124" width="556" height="78" rx="18" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2" />
+    <rect x="254" y="124" width="8" height="78" rx="4" fill="#0F766E" />
+    <text x="284" y="162" font-family="Segoe UI, PingFang SC, sans-serif" font-size="22" font-weight="700" fill="#0F172A">Task skills</text>
+    <text x="284" y="188" font-family="Segoe UI, PingFang SC, sans-serif" font-size="16" fill="#475569">idea · novel · script · explainer · product</text>
+    <text x="772" y="170" text-anchor="end" font-family="Segoe UI, PingFang SC, sans-serif" font-size="17" fill="#0F766E">content route</text>
+  </g>
+
+  <g>
+    <rect x="254" y="214" width="556" height="78" rx="18" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2" />
+    <rect x="254" y="214" width="8" height="78" rx="4" fill="#0F766E" />
+    <text x="284" y="252" font-family="Segoe UI, PingFang SC, sans-serif" font-size="22" font-weight="700" fill="#0F172A">Shared capabilities</text>
+    <text x="284" y="278" font-family="Segoe UI, PingFang SC, sans-serif" font-size="16" fill="#475569">storyboard · continuity · timing · camera language</text>
+    <text x="772" y="260" text-anchor="end" font-family="Segoe UI, PingFang SC, sans-serif" font-size="17" fill="#0F766E">common method</text>
+  </g>
+
+  <g>
+    <rect x="254" y="304" width="556" height="78" rx="18" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2" />
+    <rect x="254" y="304" width="8" height="78" rx="4" fill="#0F766E" />
+    <text x="284" y="342" font-family="Segoe UI, PingFang SC, sans-serif" font-size="22" font-weight="700" fill="#0F172A">Specialty rules</text>
+    <text x="284" y="368" font-family="Segoe UI, PingFang SC, sans-serif" font-size="16" fill="#475569">action · sound · reference sheets · model fit</text>
+    <text x="772" y="350" text-anchor="end" font-family="Segoe UI, PingFang SC, sans-serif" font-size="17" fill="#0F766E">on trigger</text>
+  </g>
+
+  <g>
+    <rect x="254" y="394" width="556" height="78" rx="18" fill="#FFFFFF" stroke="#94A3B8" stroke-width="2" stroke-dasharray="7 6" />
+    <rect x="254" y="394" width="8" height="78" rx="4" fill="#94A3B8" />
+    <text x="284" y="432" font-family="Segoe UI, PingFang SC, sans-serif" font-size="22" font-weight="700" fill="#0F172A">Formula cards</text>
+    <text x="284" y="458" font-family="Segoe UI, PingFang SC, sans-serif" font-size="16" fill="#475569">enabled by the template formula checkbox</text>
+    <text x="772" y="440" text-anchor="end" font-family="Segoe UI, PingFang SC, sans-serif" font-size="17" fill="#64748B">opt-in</text>
+  </g>
+
+  <line x1="816" y1="283" x2="846" y2="283" stroke="#64748B" stroke-width="2.5" marker-end="url(#skills-arrow)" />
+
+  <g>
+    <rect x="854" y="124" width="326" height="348" rx="24" fill="#FFFFFF" stroke="#0F766E" stroke-width="3" />
+    <text x="882" y="168" font-family="Segoe UI, PingFang SC, sans-serif" font-size="24" font-weight="700" fill="#0F172A">Owned by the program</text>
+    <text x="882" y="204" font-family="Segoe UI, PingFang SC, sans-serif" font-size="17" fill="#475569">Skills never execute code</text>
+
+    <g>
+      <rect x="882" y="230" width="270" height="46" rx="12" fill="#F1F5F9" />
+      <circle cx="908" cy="253" r="6" fill="#0F766E" />
+      <text x="930" y="259" font-family="Segoe UI, PingFang SC, sans-serif" font-size="17" fill="#0F172A">model requests and replies</text>
+    </g>
+    <g>
+      <rect x="882" y="288" width="270" height="46" rx="12" fill="#F1F5F9" />
+      <circle cx="908" cy="311" r="6" fill="#0F766E" />
+      <text x="930" y="317" font-family="Segoe UI, PingFang SC, sans-serif" font-size="17" fill="#0F172A">scheduling and resuming</text>
+    </g>
+    <g>
+      <rect x="882" y="346" width="270" height="46" rx="12" fill="#F1F5F9" />
+      <circle cx="908" cy="369" r="6" fill="#0F766E" />
+      <text x="930" y="375" font-family="Segoe UI, PingFang SC, sans-serif" font-size="17" fill="#0F172A">material and capacity checks</text>
+    </g>
+    <g>
+      <rect x="882" y="404" width="270" height="46" rx="12" fill="#F1F5F9" />
+      <circle cx="908" cy="427" r="6" fill="#0F766E" />
+      <text x="930" y="433" font-family="Segoe UI, PingFang SC, sans-serif" font-size="17" fill="#0F172A">saving and result matching</text>
+    </g>
+  </g>
+
+  <text x="60" y="517" font-family="Segoe UI, PingFang SC, sans-serif" font-size="18" fill="#475569">Ordinary stories and ads never get a formula automatically; a formula card joins planning only on an explicit trigger.</text>
+</svg>
