@@ -2,15 +2,39 @@
 
 [简体中文](./README.md) · [English](./README_EN.md)
 
-Create videos in ComfyUI: **plan shots → generate segments → edit the final video**. Work with text, images, video and audio, or change one segment while reusing the rest.
+> **Lead｜Break one long video into segments you can actually execute.**
+>
+> A ComfyUI plugin: AI handles planning and prompts, the official MiniMax H3 nodes handle generation, and this plugin handles splitting, continuation, joining and post-production handoff.
 
-Video generation uses ComfyUI’s official MiniMax H3 nodes. AI planning and prompt rewriting use the model service you configure.
+<img width="3830" height="1877" alt="AI视频规划师界面" src="https://github.com/user-attachments/assets/58fd4209-1137-4232-b772-d519727b6062" />
 
-<img width="3833" height="1916" alt="AI视频规划师界面03" src="https://github.com/user-attachments/assets/3adb21e5-7f06-4431-b0a2-62f1294b352a" />
+*Fig 1.1｜The AI Video Planner interface: from brief and shot list to timeline and video production.*
 
-**Quick links:** [Install](#install) · [Get started](#get-started) · [Materials and models](#materials-and-models) · [Edit one segment and reuse results](#edit-one-segment-and-reuse-results) · [Save and restore](#save-and-restore) · [Common questions](#common-questions) · [Changelog](#changelog)
+> **Good video = a clear goal × the right structure × executable shots × controlled rhythm.**
+
+## Contents
+
+> **00 / Lead｜Pick a route first, then read the details.** This guide runs in the order environment → creation → materials → reuse → saving → optimisation. On a first read, go straight through from chapter 01.
+
+| Chapter | Topic | Read it when |
+|---|---|---|
+| **01** | [Install](#install) | Installing for the first time, or after a plugin update |
+| **02** | [Get started](#get-started) | You want to complete one video end to end |
+| **03** | [Skills creative references](#skills-creative-references) | You want to understand or extend the creative rules |
+| **04** | [Materials and models](#materials-and-models) | Configuring AI services, reference images or materials |
+| **05** | [Edit one segment and reuse results](#edit-one-segment-and-reuse-results) | Already generated, and you only want to change part |
+| **06** | [Save and restore](#save-and-restore) | Saving, sharing or restoring a project |
+| **07** | [Upscaling and acceleration](#upscaling-and-acceleration) | You want better picture or faster generation |
+| **08** | [Common questions](#common-questions) | You hit a save, request or generation problem |
+| **09** | [Guides and feedback](#guides-and-feedback) | Customising references or filing an issue |
+| **10** | [Changelog](#changelog) | Checking what changed |
+| **Appendix** | [Acknowledgments](#acknowledgments) · [Support the author](#support-the-author) | Sources, licences and how to back the project |
+
+---
 
 ## Install
+
+> **01 / Lead｜Get the environment running before chasing length or picture quality.** This chapter covers installation, dependencies and startup only; confirm the models and nodes with a short clip first.
 
 You need ComfyUI with its official MiniMax H3 nodes, an H3 model, a Qwen3-VL encoder, and video and audio VAEs. Start with a short clip to check your setup before increasing duration or resolution.
 
@@ -44,7 +68,13 @@ All three local voice models use the same [installer and shared-host environment
 
 </details>
 
+> **One-line takeaway｜Confirm the environment with a short clip, then add duration and resolution.**
+
+---
+
 ## Get started
+
+> **02 / Lead｜Four steps close the smallest complete creative loop.** Load a workflow, plan, build the timeline, then produce the video. Every step saves, so nothing has to be right on the first pass.
 
 ### 1. Load a workflow
 
@@ -56,6 +86,19 @@ For your first run, load the [basic workflow](./workflows/AI长视频规划师V3
 | **提示词时间轴 — Prompt Timeline** | Adjust shot order and duration, then generate prompts |
 | **提示词编辑 — Prompt Editor** | Edit segments on the node and choose generation modes and references |
 | **视频制作 — Video Production** | Receive generated videos, trim, adjust sound, add subtitles and music, then export |
+
+**Method card｜The minimum creative loop**
+
+| Module | Content |
+|---|---|
+| **Core** | Finish one playable, saveable short clip before adding complexity |
+| **Formula** | Load a workflow → generate the shot list → adjust and fill the node → run and produce the video |
+| **Example** | On a first run, use few materials and a short duration to validate the whole flow |
+| **Fits** | Environment checks, onboarding, quick retries after swapping models |
+
+![Creative loop overview](./文档/插图/创作总流程_EN.svg)
+
+*Fig 2.1｜The minimum loop from materials and shot list to prompts and finished video.*
 
 ### 2. Plan your shots
 
@@ -100,15 +143,82 @@ Outputs include images, audio, frame rate, total frames and a report for preview
 
 </details>
 
+> **One-line takeaway｜Get a short video through first, then add duration, resolution and post-production complexity.**
+
+---
+
+## Skills creative references
+
+> **03 / Lead｜Let each piece of creative guidance do its own job.** Task skills decide how content is understood, shared capabilities provide general methods, specialty rules fix specific problems, and formula cards add structure on request.
+
+`Skills/` is the creative-rules library shipped with the plugin. During planning the AI picks shared capabilities, specialty rules and task skills automatically from the video brief — you never choose skills by hand.
+
+![Skills layers](./文档/插图/Skills分层_EN.svg)
+
+*Fig 3.1｜Creative references are assembled by task and stage; the program owns requests, scheduling, checks and saving.*
+
+### What it does well
+
+- **Assembled on demand** — material type, target genre, rewrite mode, planning stage and trigger conditions decide what is loaded. Core text is loaded once without duplication; supporting details are read per task.
+- **Layered rules** — task skills, shared capabilities, specialty rules and formula cards are maintained separately, so there are general methods and topic- or problem-specific capabilities side by side.
+- **Clear boundaries** — your requirements, source-text facts, product facts, duration and the sound plan outrank formulas or style suggestions; materials, coverage, capacity and formatting are still validated by the program.
+- **Defined responsibility** — Skills only provide creative method; they run no code. Model requests, task scheduling, result validation and save/restore belong to the plugin.
+- **Easy to extend** — add specialty rules, references or formula cards inside the existing folders without touching other request types.
+
+### Capabilities
+
+- Recognises ideas, novels, scripts, explainers and product briefs, then sets the planning route and rewrite approach.
+- Arranges content structure, episodes, scenes, shot order, duration, dialogue capacity and what is actually executable.
+- Designs characters, locations, props, action causality, camera language, reference sheets and spatial rehearsal.
+- Handles character and location continuity, dialogue and sound, model fit and finished-video problem prevention.
+- When a fixed narrative skeleton is needed it can supply macro structures such as the **模版公式** (template formula), without overriding your established facts or main structure.
+
+### Coverage
+
+- **Task skills**: idea development, novel adaptation, script fidelity, explainer, product showcase, requirement discovery.
+- **Shared capabilities**: storyboard structure, general shot design, character and location continuity, duration and feasibility.
+- **Specialty rules**: world rules and space, character design, content creativity, action and combat, reference-sheet rehearsal, scene-level narrative, finished-video prevention, model adaptation, object transformation, performance and sound, camera language, genre expression.
+- **Formula cards**: the general video formula, with room for more cards later.
+
+Ordinary stories and ordinary ads do not get a formula applied automatically; formula cards are used only when **模版公式** is checked or you explicitly ask for a formula, narrative skeleton or structure template.
+
+Folder layout and customisation are covered in [Skills 目录说明](./Skills/目录说明.md) and [Skills 目录与装配说明](./文档/技术实现/Skills目录与装配说明.md) (Chinese).
+
+> **One-line takeaway｜Skills supply the method; the program handles execution and validation.**
+
+---
+
 ## Materials and models
+
+> **04 / Lead｜Connect the service, the materials and the generation entry points first.** Models understand and generate; the plugin puts materials in the right place and checks whether the capability matches.
 
 ### Configure the AI service
 
 Open **ComfyUI Settings → 🎬 AI视频规划师 → API 模型配置**. Enter the service address, model name and API key, test the connection, and save. Preset services and custom cloud or local services with an OpenAI-compatible interface are supported.
 
+**Local opening-frame check** uses `LLM/Qwen3.5-9B` inside the ComfyUI model folder. When the first narrative shot is missing a positioning field and the program cannot confirm it straight from the existing opening frame, the plugin runs one offline short-text judgement on NVIDIA CUDA when needed. After confirmation it records only the verbatim opening-frame evidence. **检查本地模型** in the model list checks the runtime environment; main planning keeps using the API selected as **AI规划模型**.
+
 You can choose separate models for **AI规划模型**, **时间轴改写模型** and **提示词优化模型**. Unassigned functions use the default model. The planning model must support your material types; both prompt rewriting tools send text only.
 
 Adjust the request timeout for slower models. Timeline rewriting and editor optimization each wait at most 600 seconds per request, or the configured timeout if shorter.
+
+### Generate planning reference images with a ComfyUI workflow
+
+1. Prepare a local ComfyUI workflow that outputs a single image. Use **Save Image** or **Preview Image** as the output; when the workflow has several image outputs, name the target node **LVP 输出图**.
+2. Save the JSON with **Export (API)** and put the file in this plugin’s [workflows/生图](./workflows/生图) folder.
+3. In **API 模型配置 → 图像模型**, choose **ComfyUI 本地工作流**, select the **文生图工作流** and save. With **生成参考图** enabled on the planning page, the job runs in the current ComfyUI queue and the pictures join the planning materials.
+
+Each character gets one horizontal four-view identity sheet from a single image-model run, left to right: a front face-and-neck close-up, a full-body front view, a full-body profile with the nose pointing left, and a full-body back view. The prompt keeps the three full-body views at the same scale with head and feet aligned, arms relaxed and opened about 15°. The four views serve as identity reference; first and last frames use separate shot images. Landscape canvases are recommended for text-to-image and image-to-image workflows.
+
+Each prop gets one image per run. When the story only shows a photo or poster, generate one complete front view. When the physical structure matters, show front, side and back in order. When the story opens, closes or folds it, show each key state in separate rows of the same image, and shots reference the state in use. Photos or patterns printed on a prop turn with the object and keep their own composition.
+
+Configure **图生图工作流** as well when the workflow needs to draw from an uploaded image.
+
+- The planner follows the sampler’s forward links to find a single unique text-encoding entry. Common CLIP, SDXL, SD3, FLUX and Qwen image encoder nodes take the text directly; nodes with several text boxes receive it in each forward box. Negative prompts stay as the workflow set them. When the Qwen Image 2.1 negative box is left empty, character and prop sheets exclude text, borders and panel lines by default; scene images exclude text, watermarks, annotations and collages.
+- When the encoder node has a recognisable image port, the planner connects your selected images in order, reusing existing load and processing chains, and empty ports may stay connected. If reference images only travel an independent branch, or their source cannot be determined, name the matching **Load Image** nodes **LVP 参考图 1**, **LVP 参考图 2** and so on, one per image selected that run.
+- When the forward entry cannot be resolved uniquely, or forward text passes through processing links you want to keep, set the target text input to `{{LVP_PROMPT}}`.
+
+Auto-fill applies only to the job queued in that run. Models, sizes and sampling parameters in the workflow run exactly as the file specifies.
 
 ### Planning materials and segment references
 
@@ -130,18 +240,37 @@ The Bailian Beijing service supports uploading complete images, videos and audio
 These controls apply to reference-based video, video-to-video and reference-plus-video tasks:
 
 - **全段共用**: read video frames, their soundtracks and ordinary reference audio in consecutive segment windows. When off, each segment takes its own duration from the beginning. Frame-grid padding repeats only the last frame in that window. Explicit dialogue and background tracks keep their own arrangement.
-- **禁用**: open a video preview and enable this switch to exclude only that video's soundtrack from model references. Its images remain available.
-- **原声**: enable this switch in a video or audio preview to use that material's original audio as the output soundtrack. Reference audio remains enabled unless the video's separate **禁用** switch is on. Requires a node frame rate of 24; sound is trimmed or padded with silence to match the picture.
+- **禁用**: open a video preview and enable this switch to exclude only that video’s soundtrack from model references. Its images remain available.
+- **原声**: enable this switch in a video or audio preview to use that material’s original audio as the output soundtrack. Reference audio remains enabled unless the video’s separate **禁用** switch is on. Requires a node frame rate of 24; sound is trimmed or padded with silence to match the picture.
 
-Only one video or audio in a material group can supply the output soundtrack; selecting another replaces the previous choice. Audio previews have no disable switch. Turning off **原声** restores normal output behavior. Videos with sound occupy audio reference numbers; check the prompt's `@` list.
+Only one video or audio in a material group can supply the output soundtrack; selecting another replaces the previous choice. Audio previews have no disable switch. Turning off **原声** restores normal output behavior. Videos with sound occupy audio reference numbers; check the prompt’s `@` list.
 
 See the [reference video and audio guide (Chinese)](./文档/技术实现/2026-10-05-参考视频音轨接入修复.md).
 
 </details>
 
+> **One-line takeaway｜Planning materials inform the content, segment references drive generation, production clips serve post-production.**
+
+---
+
 ## Edit one segment and reuse results
 
+> **05 / Lead｜Shrink the redo to the segment that actually changed.** Keep everything else constant so existing results can be reused; add continuation or transitions later, and then redo only what the dependency chain requires.
+
 Existing results are reused when parameters, materials, models and **重新生成编号** (regeneration number) match. **A segment’s Run switch allows generation; it does not force a new result. A disabled segment still joins the video if a matching result exists.**
+
+**Method card｜Local rework**
+
+| Module | Content |
+|---|---|
+| **Core** | Regenerate only the target segment; every other segment reuses its matching result |
+| **Formula** | Edit the target segment → enable Run for it only → keep the regeneration number → run |
+| **Example** | With **渐变过渡** off, change only the second segment’s prompt and leave the rest alone |
+| **Fits** | Partial rework, dialogue tweaks, swapping the material of one segment |
+
+![Single-segment reuse](./文档/插图/单段结果复用_EN.svg)
+
+*Fig 5.1｜The target segment is regenerated, other segments reuse matching results, and everything is joined into the finished video.*
 
 ### Change just one segment
 
@@ -170,7 +299,13 @@ To keep the pictures for comparison, set the environment variable `H3_接缝导�
 
 The cache toolbar shows disk usage and can delete saved segment results. Deletion cannot be undone. Results are stored in `%TEMP%/长视频规划师_段缓存/` by default.
 
+> **One-line takeaway｜Local rework means changing only the target segment while every other match condition stays put.**
+
+---
+
 ## Save and restore
+
+> **06 / Lead｜Keep the creative state and the results together.** Workflows save the node and page content, plans save segments and material references, and the original files still need separate safekeeping.
 
 | Method | Use it for |
 |---|---|
@@ -185,7 +320,13 @@ Plans are stored in the plugin’s `计划数据/` folder. Share image, video an
 
 **Start over:** the node timeline’s **重置** button clears the current node’s creative content after confirmation. Connections, shared model settings and disk files are kept. Stop active tasks or wait for them to finish first.
 
+> **One-line takeaway｜The workflow owns the current project, the plan owns the reusable setup, and the original files own the material itself.**
+
+---
+
 ## Upscaling and acceleration
+
+> **07 / Lead｜Prove the basic flow first, then raise quality and speed according to your hardware.** Upscaling, redraw and SelfLift each have their own settings and cache; none is needed on a first install.
 
 These features are optional. Complete the basic workflow first.
 
@@ -194,7 +335,7 @@ These features are optional. Complete the basic workflow first.
 | **放大和重绘** | Connect 初采产物 to refine or upscale pictures; has its own saved results and regeneration number |
 | **SelfLift加速** | Connect SelfLift配置 to the main node; start at a smaller size and finish at full resolution. Use `euler` and leave at least one step for each stage |
 
-SelfLift uses lip-sync sampling by default. Enable **关闭对口型** to the left of a segment's **运行** switch to keep its single valid reference audio fixed during both sampling stages.
+SelfLift uses lip-sync sampling by default. Enable **关闭对口型** to the left of a segment’s **运行** switch to keep its single valid reference audio fixed during both sampling stages.
 
 Download the [H3 upscaling weights](https://huggingface.co/LBH-123-AI/Minimax_h3_latent_Upscaler) yourself and put them in `ComfyUI/models/latent_upscale_models/`. Pixel upscalers go in `ComfyUI/models/upscale_models/`. Lanczos upscaling requires no model. Without an upscaling model, SelfLift requires **允许插值降级**; use that mode for previews.
 
@@ -211,7 +352,13 @@ Stopping keeps data already written to disk, but refreshing the page does not au
 
 </details>
 
+> **One-line takeaway｜Test a short clip first, then choose an acceleration route based on VRAM, duration and picture goals.**
+
+---
+
 ## Common questions
+
+> **08 / Lead｜Decide which step the problem belongs to first.** Saving, requests, generation and memory each have their own boundary; keeping completed results is usually faster than restarting the whole video.
 
 **How do I keep content after a refresh?** Save the current ComfyUI workflow, and save important setups as plans too. Loading an older workflow or plan restores its older content. Keep original materials in their expected locations.
 
@@ -229,13 +376,25 @@ Stopping keeps data already written to disk, but refreshing the page does not au
 
 **Can I connect just one model input?** Yes. Connect the model needed by your current tasks; missing required models are reported clearly.
 
+> **One-line takeaway｜Keep what is finished, locate the failing stage, then retry only that part.**
+
+---
+
 ## Guides and feedback
+
+> **09 / Lead｜When you need customisation or troubleshooting, start at the matching entry point.** Creative references, provenance and licences, and technical notes are maintained separately; attach full context to a report and hide your keys.
 
 Planning and prompt rewriting automatically load the creative references included with the plugin. No manual skill selection is needed. For customization, see the [planning references](./Skills/目录说明.md), [prompt rewriting rules](./AI生成提示词/SKILL.md) and [directory guide](./文档/技术实现/Skills目录与装配说明.md). Sources and licenses are listed in the [source records](./文档/参考/Skills来源清单.json). These guides are in Chinese.
 
 Report problems in [Issues](https://github.com/a63976659/ComfyUI-AI-Video-Planner/issues) with steps to reproduce, the full error, your ComfyUI version, GPU and model details. Remove API keys and private content first.
 
+> **One-line takeaway｜Read the matching guide first, then report with reproducible steps and sanitised details.**
+
+---
+
 ## Changelog
+
+> **10 / Lead｜Read capability changes in time order.** This records what users can notice; the chapters above stay authoritative for current usage.
 
 <details>
 <summary>Show update history</summary>
@@ -310,7 +469,13 @@ See the guide above for current instructions.
 
 </details>
 
+> **One-line takeaway｜Review changes here; for current steps, go back to the matching chapter.**
+
+---
+
 ## Acknowledgments
+
+> **Appendix A / Lead｜This plugin stands on many open-source projects and community experience.** The lists below are grouped by host, model, voice, peer projects, references and dependencies.
 
 <details>
 <summary>Open-source projects and contributors</summary>
@@ -364,21 +529,32 @@ Much of the design drew on the open-source H3 ecosystem and similar AI-video too
 
 </details>
 
+---
+
 ## Support the author
+
+> **Appendix B / Lead｜Help good tools get seen.** A star, sharing your work, or a voluntary sponsor all help the project keep going.
 
 If this plugin helps you:
 
-- **Star this repo** ⭐
+- **Star this repo**
 - **Share your work** — videos made with this plugin are welcome in the Issues.
 - **Sponsor**
 
 <img width="400" height="500" alt="Donation QR code 1" src="https://github.com/user-attachments/assets/47f64c6e-cc45-4395-9b9e-29f464d12df2" />
+
+*Fig A.1｜Donation QR code 1.*
+
 <img width="400" height="500" alt="Donation QR code 2" src="https://github.com/user-attachments/assets/7bfb521a-6f24-4104-89c0-016dcf74834b" />
+
+*Fig A.2｜Donation QR code 2.*
 
 ### Thanks for your support
 
 - Thank you to **石头** (QQ: 34720803) for your suggestions, help, and red packet donation.
 - Thank you to **Sorry全场** (QQ: 473148949) for your red packet donation.
+
+> **One-line takeaway｜If the plugin helped you, a star, a shared video or feedback all count.**
 
 ---
 
