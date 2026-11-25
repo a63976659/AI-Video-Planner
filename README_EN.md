@@ -96,7 +96,7 @@ For your first run, load the [basic workflow](./workflows/AI长视频规划师V3
 | **Example** | On a first run, use few materials and a short duration to validate the whole flow |
 | **Fits** | Environment checks, onboarding, quick retries after swapping models |
 
-![Creative loop overview](./文档/插图/创作总流程_EN.svg)
+![Creative loop overview](创作总流程_EN.svg)
 
 *Fig 2.1｜The minimum loop from materials and shot list to prompts and finished video.*
 
@@ -153,7 +153,7 @@ Outputs include images, audio, frame rate, total frames and a report for preview
 
 `Skills/` is the creative-rules library shipped with the plugin. During planning the AI picks shared capabilities, specialty rules and task skills automatically from the video brief — you never choose skills by hand.
 
-![Skills layers](./文档/插图/Skills分层_EN.svg)
+![Skills layers](Skills分层_EN.svg)
 
 *Fig 3.1｜Creative references are assembled by task and stage; the program owns requests, scheduling, checks and saving.*
 
@@ -268,7 +268,7 @@ Existing results are reused when parameters, materials, models and **重新生�
 | **Example** | With **渐变过渡** off, change only the second segment’s prompt and leave the rest alone |
 | **Fits** | Partial rework, dialogue tweaks, swapping the material of one segment |
 
-![Single-segment reuse](./文档/插图/单段结果复用_EN.svg)
+![Single-segment reuse](单段结果复用_EN.svg)
 
 *Fig 5.1｜The target segment is regenerated, other segments reuse matching results, and everything is joined into the finished video.*
 
