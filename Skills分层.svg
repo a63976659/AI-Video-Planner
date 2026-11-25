@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 560" role="img" aria-labelledby="title skills">
+  <title id="title">Skills 分层</title>
+  <desc id="skills">视频需求经过任务技能、共用能力、专项规则和公式卡装配，最终由程序负责请求、调度、校验与保存。</desc>
+  <defs>
+    <marker id="skills-arrow" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M2 2 L10 6 L2 10 Z" fill="#64748B" />
+    </marker>
+  </defs>
+  <rect width="1240" height="560" rx="28" fill="#F8FAFC" />
+  <text x="62" y="62" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="34" font-weight="700" fill="#0F172A">Skills 怎样参与创作</text>
+  <text x="62" y="98" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="20" fill="#475569">资料按内容和阶段分层，Skills 提供方法，程序执行请求与校验。</text>
+
+  <g>
+    <rect x="60" y="218" width="150" height="126" rx="22" fill="#FFFFFF" stroke="#0F766E" stroke-width="3" />
+    <text x="135" y="272" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="23" font-weight="700" fill="#0F172A">视频需求</text>
+    <text x="135" y="304" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="16" fill="#475569">输入 · 体裁</text>
+    <text x="135" y="328" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="16" fill="#475569">阶段 · 条件</text>
+  </g>
+  <line x1="216" y1="281" x2="246" y2="281" stroke="#64748B" stroke-width="2.5" marker-end="url(#skills-arrow)" />
+
+  <g>
+    <rect x="254" y="124" width="556" height="78" rx="18" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2" />
+    <rect x="254" y="124" width="8" height="78" rx="4" fill="#0F766E" />
+    <text x="284" y="162" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="22" font-weight="700" fill="#0F172A">任务技能</text>
+    <text x="284" y="188" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="16" fill="#475569">想法 · 小说 · 剧本 · 科普 · 产品</text>
+    <text x="772" y="170" text-anchor="end" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="17" fill="#0F766E">内容路线</text>
+  </g>
+
+  <g>
+    <rect x="254" y="214" width="556" height="78" rx="18" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2" />
+    <rect x="254" y="214" width="8" height="78" rx="4" fill="#0F766E" />
+    <text x="284" y="252" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="22" font-weight="700" fill="#0F172A">共用能力</text>
+    <text x="284" y="278" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="16" fill="#475569">分镜 · 连续性 · 时长 · 镜头语言</text>
+    <text x="772" y="260" text-anchor="end" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="17" fill="#0F766E">通用方法</text>
+  </g>
+
+  <g>
+    <rect x="254" y="304" width="556" height="78" rx="18" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2" />
+    <rect x="254" y="304" width="8" height="78" rx="4" fill="#0F766E" />
+    <text x="284" y="342" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="22" font-weight="700" fill="#0F172A">专项规则</text>
+    <text x="284" y="368" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="16" fill="#475569">动作 · 声音 · 参考图 · 模型适配</text>
+    <text x="772" y="350" text-anchor="end" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="17" fill="#0F766E">按条件启用</text>
+  </g>
+
+  <g>
+    <rect x="254" y="394" width="556" height="78" rx="18" fill="#FFFFFF" stroke="#94A3B8" stroke-width="2" stroke-dasharray="7 6" />
+    <rect x="254" y="394" width="8" height="78" rx="4" fill="#94A3B8" />
+    <text x="284" y="432" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="22" font-weight="700" fill="#0F172A">公式卡</text>
+    <text x="284" y="458" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="16" fill="#475569">勾选模版公式或明确要求时启用</text>
+    <text x="772" y="440" text-anchor="end" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="17" fill="#64748B">不覆盖事实</text>
+  </g>
+
+  <line x1="816" y1="283" x2="846" y2="283" stroke="#64748B" stroke-width="2.5" marker-end="url(#skills-arrow)" />
+
+  <g>
+    <rect x="854" y="124" width="326" height="348" rx="24" fill="#FFFFFF" stroke="#0F766E" stroke-width="3" />
+    <text x="882" y="168" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="24" font-weight="700" fill="#0F172A">程序负责</text>
+    <text x="882" y="204" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="17" fill="#475569">Skills 不直接执行代码</text>
+
+    <g>
+      <rect x="882" y="230" width="270" height="46" rx="12" fill="#F1F5F9" />
+      <circle cx="908" cy="253" r="6" fill="#0F766E" />
+      <text x="930" y="259" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="18" fill="#0F172A">模型请求与响应处理</text>
+    </g>
+    <g>
+      <rect x="882" y="288" width="270" height="46" rx="12" fill="#F1F5F9" />
+      <circle cx="908" cy="311" r="6" fill="#0F766E" />
+      <text x="930" y="317" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="18" fill="#0F172A">任务调度与阶段续跑</text>
+    </g>
+    <g>
+      <rect x="882" y="346" width="270" height="46" rx="12" fill="#F1F5F9" />
+      <circle cx="908" cy="369" r="6" fill="#0F766E" />
+      <text x="930" y="375" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="18" fill="#0F172A">素材、原文、容量校验</text>
+    </g>
+    <g>
+      <rect x="882" y="404" width="270" height="46" rx="12" fill="#F1F5F9" />
+      <circle cx="908" cy="427" r="6" fill="#0F766E" />
+      <text x="930" y="433" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="18" fill="#0F172A">保存、恢复与结果匹配</text>
+    </g>
+  </g>
+
+  <text x="60" y="517" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="18" fill="#475569">普通故事和普通广告不会自动套公式；公式卡只在明确触发时加入规划。</text>
+</svg>

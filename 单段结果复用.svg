@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 500" role="img" aria-labelledby="title reuse">
+  <title id="title">单段结果复用</title>
+  <desc id="reuse">只让目标段重新生成，其他段复用已有结果，再拼接为完整视频。</desc>
+  <defs>
+    <marker id="reuse-arrow" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M2 2 L10 6 L2 10 Z" fill="#64748B" />
+    </marker>
+  </defs>
+  <rect width="1240" height="500" rx="28" fill="#F8FAFC" />
+  <text x="62" y="62" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="34" font-weight="700" fill="#0F172A">单段返工，不必整片重来</text>
+  <text x="62" y="98" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="20" fill="#475569">只改变目标段，并让其他匹配条件保持不变。</text>
+
+  <g>
+    <rect x="70" y="132" width="160" height="162" rx="20" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2" />
+    <text x="150" y="172" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="24" font-weight="700" fill="#0F172A">段 1</text>
+    <text x="150" y="208" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="17" fill="#64748B">复用结果</text>
+    <path d="M137 248 L146 257 L165 239" stroke="#64748B" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <g>
+    <rect x="250" y="132" width="160" height="162" rx="20" fill="#ECFDF5" stroke="#0F766E" stroke-width="3" />
+    <text x="330" y="172" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="24" font-weight="700" fill="#0F172A">段 2</text>
+    <text x="330" y="208" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="17" font-weight="700" fill="#0F766E">重新生成</text>
+    <path d="M318 252 A18 18 0 1 1 342 252" stroke="#0F766E" stroke-width="5" fill="none" stroke-linecap="round" />
+    <path d="M342 242 L350 252 L334 252 Z" fill="#0F766E" />
+  </g>
+
+  <g>
+    <rect x="430" y="132" width="160" height="162" rx="20" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2" />
+    <text x="510" y="172" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="24" font-weight="700" fill="#0F172A">段 3</text>
+    <text x="510" y="208" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="17" fill="#64748B">复用结果</text>
+    <path d="M497 248 L506 257 L525 239" stroke="#64748B" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <g>
+    <rect x="610" y="132" width="160" height="162" rx="20" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2" />
+    <text x="690" y="172" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="24" font-weight="700" fill="#0F172A">段 4</text>
+    <text x="690" y="208" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="17" fill="#64748B">复用结果</text>
+    <path d="M677 248 L686 257 L705 239" stroke="#64748B" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <g>
+    <rect x="790" y="132" width="160" height="162" rx="20" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2" />
+    <text x="870" y="172" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="24" font-weight="700" fill="#0F172A">段 5</text>
+    <text x="870" y="208" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="17" fill="#64748B">复用结果</text>
+    <path d="M857 248 L866 257 L885 239" stroke="#64748B" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <line x1="510" y1="300" x2="510" y2="334" stroke="#64748B" stroke-width="2.5" marker-end="url(#reuse-arrow)" />
+
+  <g>
+    <rect x="70" y="344" width="880" height="82" rx="22" fill="#FFFFFF" stroke="#0F766E" stroke-width="3" />
+    <text x="510" y="379" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="22" font-weight="700" fill="#0F172A">匹配段 ＋ 新结果 → 这一轮仍拼出完整视频</text>
+    <text x="510" y="407" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="16" fill="#475569">从硬盘读取时，还需要还原画面并拼接</text>
+  </g>
+
+  <g>
+    <rect x="970" y="132" width="210" height="294" rx="22" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2" />
+    <text x="998" y="172" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="21" font-weight="700" fill="#0F172A">保持不变</text>
+    <circle cx="992" cy="200" r="4" fill="#0F766E" />
+    <text x="1008" y="206" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="17" fill="#475569">段顺序与时长</text>
+    <circle cx="992" cy="232" r="4" fill="#0F766E" />
+    <text x="1008" y="238" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="17" fill="#475569">全局参数</text>
+    <circle cx="992" cy="264" r="4" fill="#0F766E" />
+    <text x="1008" y="270" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="17" fill="#475569">素材与模型</text>
+    <circle cx="992" cy="296" r="4" fill="#0F766E" />
+    <text x="1008" y="302" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="17" fill="#475569">重新生成编号</text>
+    <line x1="992" y1="326" x2="1158" y2="326" stroke="#E2E8F0" stroke-width="2" />
+    <text x="998" y="354" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="21" font-weight="700" fill="#0F172A">运行开关</text>
+    <rect x="992" y="372" width="44" height="22" rx="11" fill="#0F766E" />
+    <circle cx="1025" cy="383" r="8" fill="#FFFFFF" />
+    <text x="1050" y="389" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="16" fill="#475569">目标段</text>
+    <rect x="992" y="404" width="44" height="22" rx="11" fill="#CBD5E1" />
+    <circle cx="1003" cy="415" r="8" fill="#FFFFFF" />
+    <text x="1050" y="421" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="16" fill="#475569">其他段</text>
+  </g>
+
+  <text x="70" y="466" font-family="Segoe UI, Microsoft YaHei, PingFang SC, sans-serif" font-size="17" fill="#475569">适用于原本在「渐变过渡」关闭状态下生成的整片；开启过渡时，前段修改可能影响后续段。</text>
+</svg>
