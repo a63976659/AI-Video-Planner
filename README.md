@@ -6,7 +6,8 @@
 >
 > 这是一个 ComfyUI 插件：AI 负责规划与提示词，官方 MiniMax H3 节点负责生成，插件负责拆段、续拍、拼接与后期衔接。
 
-<img width="3833" height="1916" alt="AI视频规划师界面03" src="https://github.com/user-attachments/assets/3adb21e5-7f06-4431-b0a2-62f1294b352a" />
+<img width="3830" height="1877" alt="AI视频规划师界面" src="https://github.com/user-attachments/assets/58fd4209-1137-4232-b772-d519727b6062" />
+
 
 *图 1.1｜AI视频规划师主界面：从需求、分镜到时间轴与视频制作。*
 
